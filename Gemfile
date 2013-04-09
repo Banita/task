@@ -13,6 +13,8 @@ gem "activerecord-oracle_enhanced-adapter"
 
 gem 'rb-readline'
 
+gem 'devise'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
