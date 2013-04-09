@@ -1,0 +1,17 @@
+development:
+ adapter: oracle_enhanced
+ database: XE
+ username: task
+ password: task
+
+ test:
+  adapter: oracle_enhanced
+  database: XE
+  username: task_test
+  password: task_test
+
+ production:
+  adapter: oracle_enhanced
+  database: XE
+  username: task_prod
+  password: task_prod
