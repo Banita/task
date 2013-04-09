@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130409170819) do
+ActiveRecord::Schema.define(:version => 20130409172853) do
 
   create_table "secret_codes", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -22,14 +22,22 @@ ActiveRecord::Schema.define(:version => 20130409170819) do
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"
-    t.datetime "created_at",                                        :null => false
-    t.datetime "updated_at",                                        :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
     t.string   "encrypted_password"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "last_sign_in_ip"
     t.string   "current_sign_in_ip"
-    t.integer  "sign_in_count",      :precision => 38, :scale => 0
+    t.integer  "sign_in_count",        :precision => 38, :scale => 0
+    t.string   "password_salt"
+    t.string   "authentication_token"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "reset_password_token"
+    t.string   "remember_token"
+    t.datetime "remember_created_at"
   end
 
 end
