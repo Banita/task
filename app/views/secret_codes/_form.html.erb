@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="actions">
+    <%=f.label :secret_code%>
+    <%=f.text_field :secret_code%>
+
+    <%= select_tag :number,options_for_select([1,10,20,30,40,50,100],:selected =>10) %>
     <%= f.submit %>
-  </div>
+ </div>
 <% end %>
+

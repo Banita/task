@@ -69,7 +69,10 @@ class SecretCodesController < ApplicationController
       end
     end
   end
-  
+
+  def generate
+  SecretCode.generate_codes(params[:number])
+  end
 
   # DELETE /secret_codes/1
   # DELETE /secret_codes/1.json
