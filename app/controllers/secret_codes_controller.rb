@@ -69,6 +69,7 @@ class SecretCodesController < ApplicationController
       end
     end
   end
+  
 
   # DELETE /secret_codes/1
   # DELETE /secret_codes/1.json

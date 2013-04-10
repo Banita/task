@@ -11,11 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130409172853) do
+ActiveRecord::Schema.define(:version => 20130410062158) do
 
   create_table "secret_codes", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "secret_code"
   end
 
   create_table "users", :force => true do |t|
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20130409172853) do
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"
+    t.string   "secret_code"
   end
 
 end
